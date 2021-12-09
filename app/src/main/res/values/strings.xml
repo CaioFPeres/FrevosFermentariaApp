@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Frevo\'s Fermentaria</string>
+
+
+    <string-array name="productArray">
+        <item>AdU_500</item>
+    </string-array>
+
+</resources>

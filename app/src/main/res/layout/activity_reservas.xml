@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#c47d13"
+    android:fillViewport="true"
+    tools:context=".ActivityReservas">
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraint"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <TableLayout
+                android:id="@+id/tableLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="1dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="20dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editText"
+                app:layout_constraintVertical_weight="0">
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0">
+
+                    <TextView
+                        android:id="@+id/textView33"
+                        android:layout_width="46sp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/border"
+                        android:gravity="center"
+                        android:paddingStart="4sp"
+                        android:paddingLeft="2sp"
+                        android:paddingTop="8sp"
+                        android:paddingEnd="4sp"
+                        android:paddingRight="4sp"
+                        android:paddingBottom="8sp"
+                        android:text="Nome"
+                        android:textColor="@color/design_default_color_background" />
+
+                    <TextView
+                        android:id="@+id/textView34"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/border"
+                        android:gravity="center"
+                        android:paddingStart="4sp"
+                        android:paddingLeft="3sp"
+                        android:paddingTop="8sp"
+                        android:paddingEnd="4sp"
+                        android:paddingRight="4sp"
+                        android:paddingBottom="8sp"
+                        android:text="hBouchet"
+                        android:textColor="@color/design_default_color_background" />
+
+                    <TextView
+                        android:id="@+id/textView35"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/border"
+                        android:paddingStart="4sp"
+                        android:paddingLeft="3sp"
+                        android:paddingTop="8sp"
+                        android:paddingEnd="4sp"
+                        android:paddingRight="4sp"
+                        android:paddingBottom="8sp"
+                        android:text="hTrad"
+                        android:textColor="@color/design_default_color_background" />
+
+                    <TextView
+                        android:id="@+id/textView36"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/border"
+                        android:clickable="false"
+                        android:gravity="center"
+                        android:paddingStart="4sp"
+                        android:paddingLeft="3sp"
+                        android:paddingTop="8sp"
+                        android:paddingEnd="4sp"
+                        android:paddingRight="4sp"
+                        android:paddingBottom="8sp"
+                        android:text="Celular"
+                        android:textColor="@color/design_default_color_background"
+                        android:textIsSelectable="true" />
+
+                    <TextView
+                        android:id="@+id/textView37"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/border"
+                        android:paddingStart="4sp"
+                        android:paddingLeft="3sp"
+                        android:paddingTop="8sp"
+                        android:paddingEnd="4sp"
+                        android:paddingRight="4sp"
+                        android:paddingBottom="8sp"
+                        android:text="Vendedor"
+                        android:textColor="@color/design_default_color_background" />
+
+                    <TextView
+                        android:id="@+id/textView38"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/border"
+                        android:paddingStart="4sp"
+                        android:paddingLeft="3sp"
+                        android:paddingTop="8sp"
+                        android:paddingEnd="4sp"
+                        android:paddingRight="4sp"
+                        android:paddingBottom="8sp"
+                        android:text="Vendido"
+                        android:textColor="@color/design_default_color_background" />
+
+                </TableRow>
+            </TableLayout>
+
+            <EditText
+                android:id="@+id/editText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="1dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="30dp"
+                android:ems="10"
+                android:hint="Buscar"
+                android:inputType="textPersonName"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editText2" />
+
+            <EditText
+                android:id="@+id/editText2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:ems="10"
+                android:hint="Apagar (celular)"
+                android:inputType="number"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/button8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/roundedbutton"
+                android:text="Apagar"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </HorizontalScrollView>
+</ScrollView>
